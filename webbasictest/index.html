@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
-	
+	<title>Webtest Layout</title>
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -14,10 +15,60 @@
 </head>
 <body>
 
-<!-- Joppost -->
-<div>
+<!-- About -->
+<div class="container-fluid">
+    <div class="row Jumbotron">
+        <div class="col-12">
+            <p id="section-title">About</p>
+        </div>
+        <div class="col-6">
+            <p id="title">
+                The Next Recruitment Generation
+            </p>          
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-outline-secondary " id="info-btn">
+                READ MORE
+                <span>
+                    &nbsp;<i class="fas fa-angle-right"></i>
+                </span>
+            </button>            
+        </div>
+        
+    </div>   
+</div>
+<div class="container" id="about-info">
+    
+    
+    <div class="col-12">
+        <hr class="stroke">
+        <p>If you’re brand new to the world of coding and web development, it makes sense to start by teaching yourself using all the free coding resources online.
+        </p>
+        <p>
+            We offer you a fun and unique way to learn coding. With a fast-learning program we are based on challenges using our internal custom tests. Complete them to earn honor and progress to higher ranks. This is a fun way to learn programming online if you're motivated by a little gamification! At the end of this program you will be able to get in awesome jobs with latest technologies in Tokyo.
+                
+        </p>
+    </div>  
+</div>
 
-	
+<!-- Jobpost -->
+<div class="container-fluid">
+    <div class="row Jumbotron">
+        <div class="col-12">
+            <p id="section-title">JOB POST</p>
+        </div>
+        <div class="col-6">
+            <p id="title">Latest Jobs</p>               
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-outline-secondary " id="info-btn">
+                READ MORE
+                <span>
+                        &nbsp;<i class="fas fa-angle-right"></i>
+                    </span>
+            </button>            
+        </div>
+    </div>
 </div>
 
 <!--- Image Slider -->
@@ -27,14 +78,16 @@
 		<li data-target="#slides" data-slide-to="1"></li>
 		<li data-target="#slides" data-slide-to="2"></li>
 	</ul>
-	<div class="carousel-inner ">
+	<div class="carousel-inner " role="listbox">
+        <!-- <div class="col-md-4 "> -->
 		<div class="carousel-item active">
+            <hr class="stroke">
 			<h3>FullStack Developer</h3>
 			<h5>6.000.000 - 8.000.000</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<button type="button" class="btn btn-primary ">PHP</button>
-			<button type="button" class="btn btn-primary ">LARAVEL</button>
-			<button type="button" class="btn btn-primary ">AWS</button>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<button type="button" class="btn btn-primary btn-xs ">PHP</button>
+			<button type="button" class="btn btn-primary btn-xs">LARAVEL</button>
+			<button type="button" class="btn btn-primary btn-xs">AWS</button>
 			<hr>
 			<p class="icons">
 				<i class="fas fa-suitcase"></i>
@@ -49,54 +102,178 @@
 				<sup>~10/31<sup>
 			</p>
 
-		</div>
-		<div class="carousel-item">
-			<h3>FullStack Developer</h3>
-			<h5>6.000.000 - 8.000.000</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<button type="button" class="btn btn-primary ">PHP</button>
-			<button type="button" class="btn btn-primary ">LARAVEL</button>
-			<button type="button" class="btn btn-primary ">AWS</button>
-			<hr>
-			<p class="icons">
-				<i class="fas fa-suitcase"></i>
-				<sup>Motivo Inc.<sup>
-			</p>
-			<p class="icons">
-				<i class="fas fa-map-marker-alt"></i>
-				<sup>Shibuya,Tokyo<sup>
-			</p>
-			<p class="icons">
-				<i class="fas fa-clock"></i>
-				<sup>~10/31<sup>
-			</p>
-		</div>
-		<div class="carousel-item">
-			<h3>FullStack Developer</h3>
-			<h5>6.000.000 - 8.000.000</h5>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<button type="button" class="btn btn-primary ">PHP</button>
-			<button type="button" class="btn btn-primary ">LARAVEL</button>
-			<button type="button" class="btn btn-primary ">AWS</button>
-			<hr>
-			<p class="icons">
-				<i class="fas fa-suitcase"></i>
-				<sup>Motivo Inc.<sup>
-			</p>
-			<p class="icons">
-				<i class="fas fa-map-marker-alt"></i>
-				<sup>Shibuya,Tokyo<sup>
-			</p>
-			<p class="icons">
-				<i class="fas fa-clock"></i>
-				<sup>~10/31<sup>
-			</p>
-		</div>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="col-md-4 "> -->
+		<div class="carousel-item ">
+            <hr class="stroke">
+            <h3>FullStack Developer</h3>
+            <h5>6.000.000 - 8.000.000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button" class="btn btn-primary btn-xs ">PHP</button>
+            <button type="button" class="btn btn-primary btn-xs">LARAVEL</button>
+            <button type="button" class="btn btn-primary btn-xs">AWS</button>
+            <hr>
+            <p class="icons">
+                <i class="fas fa-suitcase"></i>
+                <sup>Motivo Inc.<sup>
+            </p>
+            <p class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <sup>Shibuya,Tokyo<sup>
+            </p>
+            <p class="icons">
+                <i class="fas fa-clock"></i>
+                <sup>~10/31<sup>
+            </p>
+        </div>
+    <!-- </div> -->
+    <!-- <div class="col-md-4"> -->
+		<div class="carousel-item ">
+            <hr class="stroke">
+            <h3>FullStack Developer</h3>
+            <h5>6.000.000 - 8.000.000</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button type="button" class="btn btn-primary btn-xs ">PHP</button>
+            <button type="button" class="btn btn-primary btn-xs">LARAVEL</button>
+            <button type="button" class="btn btn-primary btn-xs">AWS</button>
+            <hr>
+            <p class="icons">
+                <i class="fas fa-suitcase"></i>
+                <sup>Motivo Inc.<sup>
+            </p>
+            <p class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <sup>Shibuya,Tokyo<sup>
+            </p>
+            <p class="icons">
+                <i class="fas fa-clock"></i>
+                <sup>~10/31<sup>
+            </p>
+        </div>
+    <!-- </div> -->
 	</div>
 </div>	
 
+<!-- Services -->
+<div class="service-section">
+	<div class="container-fluid">
+	    <div class="row Jumbotron">
+	        <div class="col-12">
+	            <p id="section-title" style="color: #ffffff;">Services</p>
+	        </div>
+	        <div class="col-6">
+	            <p id="title" style="color: #ffffff;">
+	                Why they Choose ThalesCode?
+	            </p>          
+	        </div>
+	        <div class="col-6">
+	            <button type="button" class="btn btn-outline-secondary " id="info-btn">
+	                FIND MORE
+	                <span>
+	                    &nbsp;<i class="fas fa-angle-right"></i>
+	                </span>
+	            </button>            
+	        </div>
+	        
+	    </div>   
+	</div>
+	<div class="nav-center">
+		<ul class="nav nav-pills">
+			
+		  	<li class="active" id="right-item">
+		  		<a data-toggle="pill" href="#employer">
+		  			Employers<hr class="stroke">
+		  		</a>
 
+		  	</li>
+		  			  	
+		  	<li id="left-item">
+		  		<a data-toggle="pill" href="#candidate">
+		  			Candidates<hr class="stroke">
+		  		</a>
+		  	</li>
+		    
+		  
+		</ul>
+	</div>
+	<div class="tab-content">
+	<!-- 	Employer -->
+	  <div id="employer" class="tab-pane fade in active">
+		<div id="emp-slide" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#emp-slide" data-slide-to="0" class="active"></li>
+				<li data-target="#emp-slide" data-slide-to="1"></li>
+				<li data-target="#emp-slide" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner " role="listbox">
+		        
+				<div class="carousel-item active">
+					<h1 class="text-primary">01</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
 
+		        </div>
+		        <div class="carousel-item ">
+					<h1 class="text-primary">02</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
+
+		        </div>
+		        <div class="carousel-item ">
+					<h1 class="text-primary">03</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
+
+		        </div>
+		    
+			</div>
+		</div>	
+	    
+	  </div>
+	  <!-- Candidate -->
+	  <div id="candidate" class="tab-pane fade">
+	    <div id="cand-slide" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#cand-slide" data-slide-to="0" class="active"></li>
+				<li data-target="#cand-slide" data-slide-to="1"></li>
+				<li data-target="#cand-slide" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner " role="listbox">
+		        
+				<div class="carousel-item active">
+					<h1 class="text-primary">01</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
+
+		        </div>
+		        <div class="carousel-item ">
+					<h1 class="text-primary">02</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
+
+		        </div>
+		        <div class="carousel-item ">
+					<h1 class="text-primary">03</h1>
+		            <hr class="stroke">
+					<h5>IT Knowledge</h5>
+					<p>Our team includes people who specialize in IT development and product development services who have the experience and knowledge to understand what our clients need. </p>									
+
+		        </div>
+		    
+			</div>
+		</div>
+	  </div>
+	  
+	</div>
+
+	
+</div>
 <!--- Meet the team -->
 
 

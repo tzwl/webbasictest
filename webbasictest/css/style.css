@@ -4,10 +4,58 @@
 html,body{
   height: 100%;
   width: 100%;
-  font-family: 'Poppins',sans-serif;
-  background-color:  #FFFFFF;
+  font-family: 'ubuntu';
+  background-color:  #463;
 
 }
+.container-fluid{
+  margin: 1em;  
+}
+.row{
+  position: relative;
+}
+#about-info{
+  margin-top: -20px;
+  
+}
+#about-info .stroke{
+  margin-left: 0px;
+}
+
+
+#section-title{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 14px; 
+  color: #09ACF8;  
+  margin-bottom: -10px; 
+}
+#title{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #342A2F;
+  
+}
+#info-btn{
+  opacity: 0.2;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 26px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  position: absolute;
+  bottom: 4em;
+  
+}
+
 .carousel-inner {
   width: 335px;
   height: 290px;
@@ -15,30 +63,113 @@ html,body{
   mix-blend-mode: normal;
   opacity: 0.9;
   box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.080163);
-  margin: 3em;
-  padding: 1em;
   text-align: center;
+  margin: 1em 3em;
+  font-size: 10px;
 }
-
+.carousel-item h3{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #2B3247; 
+}
+.carousel-item h1{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;    
+}
 .carousel-item button{
   border-radius: 30px;
   padding: 0.3em 1em;
+  block-size: 25px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
-.carousel-item p {
+.carousel-item .icons {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 8px;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+.carousel-item p{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  padding: 0.5em 1.5em;
+}
+.stroke{
+  border: 2px solid #000000;
+  width: 1rem;
+}
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+.carousel-indicators {
+  bottom: -50px;
 }
 
+.service-section{
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: linear-gradient(119.64deg, #2FB7F3 3.41%, #769ADC 60.49%, #9376DC 119.98%);
+}
+.nav-center{  
+  text-align: center;
+  
+}
+.nav-center ul.nav {
+  display: inline-block;
+    
+}
+.nav-center ul.nav li {
+  display: inline;
+}
+.nav-center ul.nav li a {
+  float: left;
+}
+.nav-center .stroke,
+.tab-content .stroke{
+  opacity: 0.1;
+}
+.tab-content .text-primary{
+  font-size: 2rem;
+}
+.tab-content .carousel-inner {
+
+  padding: 20px;
+
+}
 
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
+ 
 
 }
 @media (max-width: 768px) {
-
-  
+   
 }
 @media (max-width: 576px) {
 
@@ -95,24 +226,12 @@ figure {
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
-
 Small (sm) devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }
-
 Large (lg) devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
-
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
