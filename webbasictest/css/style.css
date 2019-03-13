@@ -1,46 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-
-html,body{
+html, body {
   height: 100%;
   width: 100%;
   font-family: 'ubuntu';
-  background-color:  #463;
+  background-color: #ffffff;
+}
 
-}
-.container-fluid{
-  margin: 1em;  
-}
-.row{
+.row {
   position: relative;
 }
-#about-info{
+
+#about-info {
   margin-top: -20px;
-  
+  margin-bottom: -2em;
 }
-#about-info .stroke{
+
+#about-info .stroke {
   margin-left: 0px;
 }
 
-
-#section-title{
+#section-title {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: bold;
   line-height: 20px;
-  font-size: 14px; 
-  color: #09ACF8;  
-  margin-bottom: -10px; 
+  font-size: 15px;
+  color: #09ACF8;
+  margin-bottom: -10px;
+  padding-top: 1em;
 }
-#title{
+
+#title {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
   color: #342A2F;
-  
 }
-#info-btn{
+
+#info-btn {
   opacity: 0.2;
   border: 1.5px solid #000000;
   box-sizing: border-box;
@@ -53,41 +51,41 @@ html,body{
   color: #000000;
   position: absolute;
   bottom: 4em;
-  
 }
 
 .carousel-inner {
-  width: 335px;
-  height: 290px;
   background: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.9;
   box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.080163);
   text-align: center;
-  margin: 1em 3em;
   font-size: 10px;
+  margin-bottom: 60px;
 }
-.carousel-item h3{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 24px;
-    text-align: center;
-    color: #2B3247; 
+
+.carousel-item h3 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #2B3247;
 }
-.carousel-item h1{
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    font-size: 17px;
-    text-align: center;
-    color: #000000;
-    mix-blend-mode: normal;
-    opacity: 0.6;    
+
+.carousel-item h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
-.carousel-item button{
+
+.carousel-item button {
   border-radius: 30px;
   padding: 0.3em 1em;
   block-size: 25px;
@@ -99,13 +97,15 @@ html,body{
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 .carousel-item .icons {
   display: inline-block;
   padding: 0 8px;
   mix-blend-mode: normal;
   opacity: 0.3;
 }
-.carousel-item p{
+
+.carousel-item p {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 300;
@@ -117,67 +117,220 @@ html,body{
   opacity: 0.6;
   padding: 0.5em 1.5em;
 }
-.stroke{
+
+.stroke {
   border: 2px solid #000000;
   width: 1rem;
 }
+
 .carousel-indicators li {
   width: 8px;
   height: 8px;
   border-radius: 100%;
+  background: #DFDFDF;
 }
+
+.carousel-indicators li.active {
+  background: #979797;
+}
+
 .carousel-indicators {
   bottom: -50px;
 }
 
-.service-section{
-  padding-top: 40px;
+#service-section {
   padding-bottom: 50px;
+  margin-top: 50px;
   background: linear-gradient(119.64deg, #2FB7F3 3.41%, #769ADC 60.49%, #9376DC 119.98%);
 }
-.nav-center{  
-  text-align: center;
-  
+
+#service-section #info-btn {
+  opacity: 0.8;
+  border: 1.5px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 26px;
+  color: #FFFFFF;
 }
+
+.nav-center {
+  text-align: center;
+}
+
 .nav-center ul.nav {
   display: inline-block;
-    
 }
+
 .nav-center ul.nav li {
   display: inline;
 }
+
 .nav-center ul.nav li a {
   float: left;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  padding: 8px;
 }
-.nav-center .stroke,
-.tab-content .stroke{
-  opacity: 0.1;
-}
-.tab-content .text-primary{
-  font-size: 2rem;
-}
-.tab-content .carousel-inner {
 
-  padding: 20px;
+.nav-center ul.nav li a.active {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.nav-center .stroke {
+  border: 2px solid #FFFFFF;
+  opacity: 0.8;
+}
+
+#emp hr {
+  text-align: right;
+  margin-right: 0;
+}
+
+#cand hr {
+  text-align: left;
+  margin-left: 0;
+}
+
+.tab-content .stroke {
+  opacity: 0.2;
+}
+
+.tab-content .text-primary {
+  height: 35px;
+  left: 45.33%;
+  right: 45.07%;
+  top: calc(50% - 35px/2 - 596.5px);
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #2CA1F8;
+  padding-top: 10px;
+}
+
+.tab-content .carousel-inner .carousel-item {
+  padding-bottom: 1.5rem;
+}
+
+.tab-content .carousel-indicators li {
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.tab-content .carousel-indicators li.active {
+  opacity: 1;
+}
+.card{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.card img{
+  width: 100%;
+  height: 300px;
+  background: #D8D8D8;
+}
+.card .stroke{
+  border: 2px solid #FFFFFF;
+}
+.card-img-overlay{
+  color: #FFFFFF;
 
 }
+.card-title{
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 18px;
+}
+.card-text{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: -0.1px;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+#card-link{
+  display: block;
+  margin: -10px;
+  font-size: 10px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #2CA1F8;
+}
+#right-text{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: right;
+  color: #000000;
+  margin: -25px -7px 0 0;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  display: block;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+#shadow{
+  font-style: italic;
+  font-weight: bold;
+}
+.dropdown{
+  display: block;
+  position: relative;
+  float: right;
+  
+}
+.img-text{
+  display: block;
+  position: absolute;
+  float: left;
+  bottom: 37%;
+}
+.img-text hr{
+  margin-left: 0px;
+}
+.dropdown-menu{
+  background: transparent;  
+  border-style: none;
+}
+.dropdown-item{
+  background-color: none;
+  font-size: 20px;
+  width: 15%;
+
+}
+
+
+
+
+
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
- 
 
-}
-@media (max-width: 768px) {
-   
-}
-@media (max-width: 576px) {
+@media (max-width: 992px) {}
 
+@media (max-width: 768px) {}
 
-}
-
+@media (max-width: 576px) {}
 
 /*---Firefox Bug Fix --*/
+
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -185,13 +338,16 @@ html,body{
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
+
 figure {
   position: relative;
   width: 100%;
   height: 60%;
   margin: 0!important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -200,6 +356,7 @@ figure {
   width: 100%;
   height: 100%;
 }
+
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;
@@ -211,17 +368,15 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
+
 /*--- Bootstrap Padding Fix --*/
+
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
-
-
-
-
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)
